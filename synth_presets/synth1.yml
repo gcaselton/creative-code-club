@@ -1,0 +1,57 @@
+# preset name
+name: "synth1"
+  
+# oscillator information
+oscillators:
+  osc1: 
+    form: 'saw'
+    level: 1.
+    detune: 0.
+    phase: 'random'
+  osc2: 
+    form: 'saw'
+    level: 0.5
+    detune: 0.2
+    phase: 'random'
+  osc3: 
+    form: 'saw'
+    level: 0.5
+    detune: 0.4
+    phase: 'random'
+
+# Numerical note length in s
+note_length: 0.35
+
+filter: "on"
+filter_type: "LPF1"
+cutoff: 0.8
+
+# define the note volume envelope applied to the samples
+# A,D,S & R correspond to 'attack', 'decay', 'sustain' and 'release'
+volume_envelope:
+  A: 0.02
+  D: 0.35
+  S: 0.
+  R: 0.01
+  Ac: 0.
+  Dc: 0.
+  Rc: 0.
+  level: 1.
+
+
+pitch_lfo:
+  use: on
+  wave: 'sine'
+  amount: 0.2
+  freq: 5
+  freq_shift: 0
+  phase: 'random'
+  A: 0.
+  D: 0.1
+  S: 1.
+  R: 0.
+  Ac: 0.
+  Dc: 0.
+  Rc: 0.
+  level: 1
+

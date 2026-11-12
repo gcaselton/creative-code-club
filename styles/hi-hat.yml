@@ -1,0 +1,17 @@
+name: 'Hi-hat'
+
+description: 'Style for the hi-hat'
+
+generator:
+  type: 'synth'
+  preset: './synth_presets/hi-hat.yml'
+
+sources: 'events'
+
+map:
+  - input: 'time'
+    output: 'time'
+  - input: 'hi-hat'
+    output: 'volume'
+
+notes: ['A2']

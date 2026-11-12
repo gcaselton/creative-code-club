@@ -1,0 +1,17 @@
+name: 'Kick'
+
+description: 'Style for the kick drum'
+
+generator:
+  type: 'synth'
+  preset: './synth_presets/kick.yml'
+
+sources: 'events'
+
+map:
+  - input: 'time'
+    output: 'time'
+  - input: 'kick'
+    output: 'volume'
+
+notes: ['F#1']

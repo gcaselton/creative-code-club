@@ -1,0 +1,21 @@
+name: 'Synth 1'
+
+description: 'Style for the first synth'
+
+generator:
+  type: 'synth'
+  preset: './synth_presets/synth1.yml'
+
+sources: 'events'
+
+map:
+  - output: 'time'
+  
+  - output: 'pitch'
+  
+  - output: 'volume'
+
+notes: ['F#4', 'G#4', 'A4']
+
+pitch_binning: 'uniform'
+

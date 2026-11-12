@@ -1,0 +1,41 @@
+# preset name
+name: "synth2"
+  
+# oscillator information
+oscillators:
+  osc1: 
+    form: 'tri'
+    level: 1.
+    detune: 0.
+    phase: 'random'
+  # osc2: 
+  #   form: 'tri'
+  #   level: 0.5
+  #   detune: 0.3
+  #   phase: 'random'
+  # osc3: 
+  #   form: 'tri'
+  #   level: 0.5
+  #   detune: 0.6
+  #   phase: 'random'
+
+# Numerical note length in s
+note_length: 0.38
+
+# filter: "on"
+# filter_type: "LPF1"
+# cutoff: 0.8
+
+# define the note volume envelope applied to the samples
+# A,D,S & R correspond to 'attack', 'decay', 'sustain' and 'release'
+volume_envelope:
+  A: 0.02
+  D: 0.38
+  S: 0.
+  R: 0.01
+  Ac: 0.
+  Dc: 0.
+  Rc: 0.
+  level: 1.
+
+

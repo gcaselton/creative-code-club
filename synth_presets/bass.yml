@@ -1,0 +1,30 @@
+# preset name
+name: "bass"
+  
+# oscillator information
+oscillators:
+  osc1: 
+    form: 'tri'
+    level: 1.
+    detune: 0.
+    phase: 'random'
+
+# Numerical note length in s
+note_length: 0.2
+
+filter: "on"
+filter_type: "LPF1"
+cutoff: 0.5
+
+# define the note volume envelope applied to the samples
+# A,D,S & R correspond to 'attack', 'decay', 'sustain' and 'release'
+volume_envelope:
+  A: 0.01
+  D: 0.15
+  S: 0.
+  R: 0.01
+  Ac: 0.
+  Dc: 0.
+  Rc: 0.
+  level: 1.
+

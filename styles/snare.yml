@@ -1,0 +1,17 @@
+name: 'Snare'
+
+description: 'Style for the snare'
+
+generator:
+  type: 'synth'
+  preset: './synth_presets/snare.yml'
+
+sources: 'events'
+
+map:
+  - input: 'time'
+    output: 'time'
+  - input: 'snare'
+    output: 'volume'
+
+notes: ['A2']

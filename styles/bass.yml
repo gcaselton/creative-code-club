@@ -1,0 +1,22 @@
+name: 'Bass'
+
+description: 'Style for the bass guitar'
+
+generator:
+  type: 'synth'
+  preset: './synth_presets/bass.yml'
+
+sources: 'events'
+
+map:
+  - output: 'time'
+  
+  - output: 'pitch'
+  
+  - output: 'volume'
+
+notes: ['B1','C#2','E2','F#2']
+
+pitch_binning: 'uniform'
+
+# 3 1 2 3 2 1 0 1

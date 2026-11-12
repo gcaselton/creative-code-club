@@ -1,0 +1,21 @@
+name: 'Synth 2'
+
+description: 'Style for the second synth'
+
+generator:
+  type: 'synth'
+  preset: './synth_presets/synth2.yml'
+
+sources: 'events'
+
+map:
+  - output: 'time'
+  
+  - output: 'pitch'
+  
+  - output: 'volume'
+
+notes: ['C#4', 'D#4', 'E4']
+
+pitch_binning: 'uniform'
+
