@@ -17,8 +17,8 @@ mixer = {
     'snare': 0.3,
     'hi-hat': 0.1,
     'bass': 0.3,
-    'synth1': 0.2,
-    'synth2': 0.2,
+    'synth1': 0.15,
+    'synth2': 0.15,
 }
 
 pan = {
@@ -48,7 +48,7 @@ synth_pattern = (
 
 data = {
     'bass': {
-        # Step 1 is silent anchor (0), steps 2-32 are None (rests), steps 33-469 play every odd step
+        # Step 1 is silent anchor (0), steps 2-32 are None (rests), steps 33-469 play every odd step (eighth notes)
         'time': [1] + ([None] * 31) + [n if n % 2 == 1 else None for n in range(33, N_16 + 1)],
         'pitch': [0] + ([None] * 31) + (bass_pattern * a_big_number),
         'volume': [0] + ([1] * (N_16 - 1))
