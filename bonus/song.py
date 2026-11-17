@@ -1,7 +1,6 @@
 from strauss.audio_figure import AudioFigure
 import numpy as np
 import pandas as pd
-from paths import ROOT
 
 af = AudioFigure()
 
@@ -36,9 +35,6 @@ drums = pd.DataFrame(
     }
 )
 
-# print(drums.head(50))
-# print(drums.tail(50))
-
 # Note patterns
 bass_pattern = [3, None, 1, None, 2, None, 3, None, 2, None, 1, None, 0, None, 1, None]
 synth_pattern = (
@@ -60,11 +56,11 @@ data = {
         'volume': [0] + ([1] * (N_16 - 1))
     },
     'synth2': {
-            # Step 1 anchor + 95 silent steps (steps 2-96) + pattern starting cleanly on step 97
-            'time': [1] + ([None] * 95) + [x if x % 16 in (1, 7) else None for x in range(97, N_16 + 1)],
-            'pitch': ([0] + ([None] * 95) + (synth_pattern * a_big_number))[:N_16],
-            'volume': [0] + ([1] * (N_16 - 1))
-        }
+        # same as synth1 above
+        'time': [1] + ([None] * 95) + [x if x % 16 in (1, 7) else None for x in range(97, N_16 + 1)],
+        'pitch': ([0] + ([None] * 95) + (synth_pattern * a_big_number))[:N_16],
+        'volume': [0] + ([1] * (N_16 - 1))
+    }
 }
 
 for k, v in data.items():
