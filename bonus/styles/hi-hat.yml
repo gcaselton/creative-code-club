@@ -4,7 +4,7 @@ description: 'Style for the hi-hat'
 
 generator:
   type: 'synth'
-  preset: './synth_presets/hi-hat.yml'
+  preset: './bonus/synth_presets/hi-hat.yml'
 
 sources: 'events'
 

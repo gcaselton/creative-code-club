@@ -4,7 +4,7 @@ description: 'Style for the snare'
 
 generator:
   type: 'synth'
-  preset: './synth_presets/snare.yml'
+  preset: './bonus/synth_presets/snare.yml'
 
 sources: 'events'
 

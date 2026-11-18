@@ -73,11 +73,11 @@ for k, v in data.items():
     
 for track in drums.columns:
     if track == 'time': continue 
-    af.sonify(drums, style=f'./styles/{track}.yml', duration=duration, level=mixer[track], fix_pan=pan.get(track, 0.5))
+    af.sonify(drums, style=f'./bonus/styles/{track}.yml', duration=duration, level=mixer[track], fix_pan=pan.get(track, 0.5))
 
 for track in data.keys():
     args = [data[track][k] for k in data[track].keys()]
-    af.sonify(*args, style=f'./styles/{track}.yml', duration=duration, level=mixer[track], fix_pan=pan.get(track, 0.5))
+    af.sonify(*args, style=f'./bonus/styles/{track}.yml', duration=duration, level=mixer[track], fix_pan=pan.get(track, 0.5))
     
-af.save('output.wav', master_volume=0.7)
+af.save('billie_jean.wav', master_volume=0.7)
 

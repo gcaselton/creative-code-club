@@ -4,7 +4,7 @@ description: 'Style for the second synth'
 
 generator:
   type: 'synth'
-  preset: './synth_presets/synth2.yml'
+  preset: './bonus/synth_presets/synth2.yml'
 
 sources: 'events'
 

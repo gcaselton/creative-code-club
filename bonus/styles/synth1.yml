@@ -4,7 +4,7 @@ description: 'Style for the first synth'
 
 generator:
   type: 'synth'
-  preset: './synth_presets/synth1.yml'
+  preset: './bonus/synth_presets/synth1.yml'
 
 sources: 'events'
 
